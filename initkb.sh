@@ -1,0 +1,9 @@
+#!/bin/bash
+
+NPROC_PER_NODE=4
+NNODES=1
+RANK=0
+MASTER_ADDR=127.0.0.1
+MASTER_PORT=29500
+
+ASCEND_RT_VISIBLE_DEVICES=0 python init_database.py --recreate-vs
